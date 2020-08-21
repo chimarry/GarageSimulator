@@ -1,0 +1,56 @@
+#gridPane{
+-fx-background-color: #000000;
+ -fx-background-radius: 5.0;
+ -fx-grid-lines-visible: true;
+ -fx-border-color: #000000;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-padding: 10;
+    -fx-hgap: 10;
+    -fx-vgap: 10
+}
+#text{
+    -fx-font-weight:bold;
+
+    -fx-font-size:16;
+}
+#text .scroll-pane {
+
+    -fx-background-color:darkgrey;
+}
+
+#text .scroll-pane .viewport{
+
+  -fx-background-color:darkgrey;
+}
+
+
+#text .scroll-pane .content{
+
+    -fx-background-color:white;
+}
+#text .scroll-pane .content .text {
+          -fx-text-alignment: center;
+
+      }
+#parkingSpace  {
+    -fx-font-weight:bold;
+
+    -fx-font-size:16;
+ }
+ #parkingSpace .scroll-pane {
+   -fx-background-color:darkgrey;
+
+ }
+
+ #parkingSpace .scroll-pane .viewport{
+     -fx-background-color: #696969;
+ }
+
+
+ #parkingSpace .scroll-pane .content{
+  -fx-background-color: #696969;
+
+ }
+ #parkingSpace .scroll-pane .content .text {
+  -fx-text-alignment: center;
+  }

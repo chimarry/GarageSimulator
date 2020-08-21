@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="700.0" prefWidth="600.0" style="-fx-background-image: url('/design/front.png');" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulation.controller.LoginFormController">
+   <children>
+      <VBox layoutX="375.0" layoutY="111.0" prefHeight="195.0" prefWidth="173.0">
+         <children>
+            <Label prefHeight="32.0" prefWidth="153.0" text="Username" textFill="#fdfdff">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" prefHeight="32.0" prefWidth="184.0" style="-fx-background-color: white;" />
+            <Label prefHeight="32.0" prefWidth="160.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" prefHeight="32.0" prefWidth="184.0" style="-fx-background-color: white;" />
+            <BorderPane prefHeight="50.0" prefWidth="173.0">
+               <right>
+                  <Button fx:id="logInButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" style="-fx-background-color: MidnightBlue;" text="Log in" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </right>
+            </BorderPane>
+         </children>
+      </VBox>
+      <Label fx:id="label" layoutY="253.0" prefHeight="107.0" prefWidth="350.0" text="GARAGE">
+         <font>
+            <Font name="Bell MT" size="65.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5333333333333333" endY="0.22857142857142854" startX="0.280952380952381" startY="0.9">
+               <stops>
+                  <Stop color="#3b319a" />
+                  <Stop color="#f8f4f4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

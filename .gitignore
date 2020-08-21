@@ -1,0 +1,260 @@
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+@chimarry 
+@dedunumax
+dedunumax/.gitignore Java
+Last active 5 days ago • Report abuse
+96
+33
+ Code
+ Revisions 18
+ Stars 96
+ Forks 33
+<script src="https://gist.github.com/dedunumax/54e82214715e35439227.js"></script>
+A complete .gitignore file for Java - https://www.dedunu.info/2014/11/gitignore-file-for-java.html
+.gitignore Java
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+##############################
+## Eclipse
+##############################
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+##############################
+## NetBeans
+##############################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## Visual Studio Code
+##############################
+.vscode/
+.code-workspace
+
+##############################
+## OS X
+##############################
+.DS_Store
+@jsumanadas
+jsumanadas commented on Sep 11, 2019
+very useful stuff tk Dedunumax
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Sep 12, 2019
+Please feel free to suggest changes.
+
+@yashinweb
+yashinweb commented on Oct 28, 2019
+Very nice, thx
+
+@pndurette
+pndurette commented on Nov 1, 2019
+Thanks for this!
+I noticed in a project I'm working on, the file .factorypath gets also auto-build (by VS Code, but seems to be an Eclipse thing as well)
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Nov 2, 2019
+I thought VSCode doesn't create files. Let me check and I will change the file accordingly. Thanks a lot for the suggestion.
+
+@pndurette
+pndurette commented on Nov 2, 2019
+Could possibly be maven as well—
+(I work with this project but not with the Java portion specifically)
+
+@danjee
+danjee commented on Jan 12
+Can you can add pom.xml.bak ? Sort plugins makes a backup of the pom file
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Jan 12
+Could possibly be maven as well—
+(I work with this project but not with the Java portion specifically)
+
+.fatctorpath is a result of Eclipse. So I added it to the Eclipse section.
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Jan 12
+Can you can add pom.xml.bak ? Sort plugins make a backup of the pom file
+
+I added the pom.xml.bak too. Thank you!
+
+@ckzgraphics
+ckzgraphics commented on Jan 26
+Useful gist 👍
+
+You may add the following as well -
+
+##############################
+
+Visual Studio Code
+##############################
+.vscode/
+
+@falktan
+falktan commented on Mar 18
+I thought VSCode doesn't create files. Let me check and I will change the file accordingly. Thanks a lot for the suggestion.
+
+Apparently VSCode produces pretty much the same files as Eclipse.
+It might be reasonable to adjust the comment from "Eclipse" to "Eclipse / VSCode".
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Mar 18
+Useful gist 👍
+
+You may add the following as well -
+
+##############################
+
+Visual Studio Code
+##############################
+.vscode/
+
+Done!
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Mar 18
+I thought VSCode doesn't create files. Let me check and I will change the file accordingly. Thanks a lot for the suggestion.
+
+Apparently VSCode produces pretty much the same files as Eclipse.
+It might be reasonable to adjust the comment from "Eclipse" to "Eclipse / VSCode".
+
+Thanks a lot for the suggestion! I think they depend on the tools/extensions used with VSCode.
+
+@joedatlive
+joedatlive commented on Mar 25
+How about the work space files for VSCode?
+*.code-workspace
+
+@Alvhix
+Alvhix commented on Apr 29
+Thank you very much!
+
+@dedunumax
+Owner
+Author
+dedunumax commented on May 18
+How about the work space files for VSCode?
+*.code-workspace
+
+Done! :D
+
+@ckzgraphics
+ckzgraphics commented on May 25
+Another good source- https://www.gitignore.io/
+
+Java- https://www.gitignore.io/api/java%2Cintellij
+
+Original Post- https://stackoverflow.com/a/38259237/2923098
+
+@dedunumax
+Owner
+Author
+dedunumax commented on May 25
+Thanks a lot, @ckzgraphics! I personally believe checked in code should be IDE neutral. I don't like adding any file related to the .idea/ folder in the repository.
+
+@ckzgraphics
+ckzgraphics commented on May 25
+Yep, @dedunumax. Commented for better reach to the resource 😃
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Jun 13
+Yep, @dedunumax. Commented for better reach to the resource 😃
+
+Cool. :D
+
+@chimarry
+ 
+Leave a comment
+
+Attach files by dragging & dropping, selecting or pasting them.
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
